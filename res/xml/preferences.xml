@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="Mode settings" >
+        <CheckBoxPreference
+            android:key="dimscreen"
+            android:summaryOff="Screen will not be dimmed"
+            android:summaryOn="Screen will be dimmed"
+            android:title="Dim screen" />
+        <CheckBoxPreference
+            android:key="silentmode"
+            android:summaryOff="Ringer will be left alone"
+            android:summaryOn="Ringer will be silenced"
+            android:title="Silent mode" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Activation settings" >
+        <CheckBoxPreference
+            android:key="startonpower"
+            android:summaryOff="Don&apos;t Autostart when power connected"
+            android:summaryOn="Autostart when power connected"
+            android:title="Should WidgetDock start when power is connected?" />
+        <CheckBoxPreference
+            android:dependency="startonpower"
+            android:key="startontime"
+            android:summary="Activation during..."
+            android:summaryOff="Autostart any time"
+            android:summaryOn="Autostart only between given times"
+            android:title="Should WidgetDock activate only during certain hours?" />
+
+        <com.adebenham.widgetdock.TimePreference
+            android:name="Start time"
+            android:dependency="startontime"
+            android:dialogLayout="@layout/time_preference"
+            android:key="start_time"
+            android:summary=""
+            android:title="Time to enable activation" />
+        <com.adebenham.widgetdock.TimePreference
+            android:name="End time"
+            android:dependency="startontime"
+            android:dialogLayout="@layout/time_preference"
+            android:key="end_time"
+            android:summary=""
+            android:title="Time to disable activation" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

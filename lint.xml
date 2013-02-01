@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="ExportedContentProvider">
+        <ignore path="AndroidManifest.xml" />
+    </issue>
+    <issue id="UselessParent">
+        <ignore path="res/layout/main.xml" />
+    </issue>
+</lint>

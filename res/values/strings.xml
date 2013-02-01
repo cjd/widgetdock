@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WidgetDock</string>
+    
+    
+    <string name="menu_insert_widget_label">Add A Widget</string>
+    <string name="group_search">Search</string>
+    
+    <string name="menu_remove_widget_label">Remove Widget</string>
+    <string name="no_widgets_popup">Add widgets first</string>
+    <string name="widget_removed_popup">The widget was removed!</string>
+    <string name="welcome_text">Welcome to WidgetDock\n\nYou currently don\'t have any widgets added.\nHow about adding one?</string>
+    <string name="settings_menu_label">Preferences</string>
+    <string name="start_time">Time to enable autostart</string>
+    <string name="end_time">Time to disable autostart</string>
+    <string name="preferences">Preferences</string>
+    <string name="widgetdock_logo">WidgetDock Logo</string>
+    
+</resources>
